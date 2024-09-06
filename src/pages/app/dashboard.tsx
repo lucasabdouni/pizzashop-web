@@ -1,10 +1,10 @@
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from 'react-helmet-async'
 
 export default function Dashboard() {
   return (
     <>
-      <Helmet title='Dashboard'/>
+      <Helmet title="Dashboard" />
       <div></div>
     </>
-  );
+  )
 }
