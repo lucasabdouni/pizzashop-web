@@ -39,7 +39,7 @@ export default function RevenueChart() {
   const chartData = useMemo(() => {
     return dailyRevenueInPeriod?.map((chartItem) => {
       return {
-        data: chartItem.data,
+        data: chartItem.date,
         receipt: chartItem.receipt / 100,
       }
     })

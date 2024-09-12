@@ -33,14 +33,14 @@ export default function SignUp() {
   })
 
   async function handleSignUp(data: SignUpForm) {
-    await registerRestaurentFn({
-      restaurantName: data.restaurantName,
-      managerName: data.managerName,
-      email: data.email,
-      phone: data.phone,
-    })
-
     try {
+      await registerRestaurentFn({
+        restaurantName: data.restaurantName,
+        managerName: data.managerName,
+        email: data.email,
+        phone: data.phone,
+      })
+
       toast.success('Restaurante cadastrado com sucesso!', {
         action: {
           label: 'login',
